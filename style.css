@@ -91,6 +91,11 @@ button {
   padding: 15px;
   border-radius: 25px;
   border: none;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
 }
 #skillsTable {
   display: flex;
