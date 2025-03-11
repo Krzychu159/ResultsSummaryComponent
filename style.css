@@ -8,8 +8,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  --font-barlow: "Barlow", sans-serif;
-  font-family: var(--font-barlow);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-weight: 420;
 }
 h2 {
@@ -20,27 +22,31 @@ section {
   display: flex;
   flex-direction: row;
   max-width: 650px;
-  min-height: 400px;
+  min-height: 460px;
+  background-color: white;
+  border-radius: 25px;
 }
 #leftSide {
   width: 50%;
-  padding: 2em;
+  padding: 2.7em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   color: white;
   background-color: #5d3ffb;
+  border-radius: 25px;
 }
 #rightSide {
   width: 50%;
-  padding: 2em;
+  padding: 2.7em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
   color: black;
   background-color: white;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 /* leftSide */
@@ -48,7 +54,7 @@ section {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-color: #5d4ea8;
+  background-color: hsl(252, 100%, 67%);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -61,4 +67,33 @@ section {
 }
 .wordRatio {
   font-size: 1.8em;
+}
+.textRatio {
+  padding: 0 10px;
+  opacity: 0.7;
+}
+
+/* rightSide */
+button {
+  background-color: hsl(252, 100%, 67%);
+  color: white;
+  font-size: 1.1em;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+}
+#skillsTable {
+  display: flex;
+  min-height: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skill {
+  padding: 15px 0;
+  border-radius: 15px;
+  font-weight: 600;
+}
+.skill {
+  background-color: hsl(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
 }
