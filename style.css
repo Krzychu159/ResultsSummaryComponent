@@ -36,6 +36,11 @@ section {
   color: white;
   background-color: #5d3ffb;
   border-radius: 25px;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
 }
 #rightSide {
   width: 50%;
@@ -60,6 +65,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
 }
 .circle p {
   padding: 0;
@@ -89,11 +99,41 @@ button {
   justify-content: space-between;
 }
 .skill {
-  padding: 15px 0;
+  padding: 15px 15px 15px 0;
   border-radius: 15px;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
-.skill {
-  background-color: hsl(0, 100%, 67%, 0.1);
+.skillName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 1em;
+}
+.skillName img {
+  width: 1.2em;
+}
+
+.score-total {
+  color: gray;
+}
+.score-number {
+  color: hsl(224, 30%, 27%);
+}
+.reaction {
+  background-color: hsl(0, 100%, 67%, 0.05);
   color: hsl(0, 100%, 67%);
+}
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.05);
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.05);
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.05);
+  color: hsl(234, 85%, 45%);
 }
